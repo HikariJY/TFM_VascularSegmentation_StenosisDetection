@@ -11,14 +11,14 @@ Recuperado en [KAGGLE - ARCADE](https://www.kaggle.com/datasets/gongiahmed/arcad
 <table>
   <tr>
     <td align="center">
-      <img src="readme_resources/ARCADE_stenosis.png" width="250">
+      <img src="readme_resources/ARCADE_stenosis.png" alt="Imagen 1" width="250">
       <br>
-      **Imagen 1. ARCADE-Estenosis**
+      Imagen 1. ARCADE-Estenosis
     </td>
     <td align="center">
-      <img src="readme_resources/ARCADE_syntax.png" width="250">
+      <img src="readme_resources/ARCADE_syntax.png" alt="Imagen 2" width="250">
       <br>
-      **Imagen 2. ARCADE-Sintaxis**
+      Imagen 2. ARCADE-Sintaxis
     </td>
   </tr>
 </table>
@@ -68,17 +68,15 @@ Recuperado en [KAGGLE - DCA1](https://www.kaggle.com/datasets/bard2024/database-
 
 <table>
   <tr>
-    <td>
-        <figure>
-            <img src="readme_resources/DCA1_angiography.png" alt="Imagen 3" width="250">
-            <figcaption align="center">Imagen 3. DCA1-Angiografía</figcaption>
-        </figure>
+    <td align="center">
+      <img src="readme_resources/DCA1_angiography.png" alt="Imagen 3" width="250">
+      <br>
+      Imagen 3. DCA1-Angiografía
     </td>
-    <td>
-        <figure>
-            <img src="readme_resources/DCA1_mask.png" alt="Imagen 4" width="250">
-            <figcaption align="center">Imagen 4. DCA1-Máscara</figcaption>
-        </figure>
+    <td align="center">
+      <img src="readme_resources/DCA1_mask.png" alt="Imagen 4" width="250">
+      <br>
+      Imagen 4. DCA1-Máscara
     </td>
   </tr>
 </table>
