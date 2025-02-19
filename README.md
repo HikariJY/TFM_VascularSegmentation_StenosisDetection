@@ -10,21 +10,20 @@ Recuperado en [KAGGLE - ARCADE](https://www.kaggle.com/datasets/gongiahmed/arcad
 
 <table>
   <tr>
-    <td>
+    <td align="center">
         <figure>
-            <img src="readme_resources/ARCADE_stenosis.png" alt="Imagen 1" width="250"><br>
-            <figcaption align="center">Imagen 1. ARCADE-Estenosis</figcaption>
+            <img src="readme_resources/ARCADE_stenosis.png" alt="Imagen 1" width="250">
+            <figcaption>Imagen 1. ARCADE-Estenosis</figcaption>
         </figure>
     </td>
-    <td>
+    <td align="center">
         <figure>
             <img src="readme_resources/ARCADE_syntax.png" alt="Imagen 2" width="250">
-            <figcaption align="center">Imagen 2. ARCADE-Sintaxis</figcaption>
+            <figcaption>Imagen 2. ARCADE-Sintaxis</figcaption>
         </figure>
     </td>
   </tr>
 </table>
-
 
 ```plaintext
 📂 **ARCADE**
