@@ -86,5 +86,16 @@ Recuperado en [KAGGLE - DCA1](https://www.kaggle.com/datasets/bard2024/database-
 └── Archivos (268): _Ejemplos_: 1.pgm, 10.pgm, 100.pgm, 100_gt.pgm, 101.pgm
 ```
 
-## **Generacion de datos**
+## **GENERACIÓN DE DATOS**
+
+Se usaron las anotaciones del dataset ARCADE para generar las máscaras de segmentación:
+
+<img src="readme_resources/ARCADE_stenosis_masks.png" alt="Imagen 5" width="250">
+<br>
+Imagen 5. ARCADE-Stenosis-Generación de máscaras
+<img src="readme_resources/ARCADE_syntax_masks.png" alt="Imagen 6" width="250">
+<br>
+Imagen 6. ARCADE-Syntax-Generación de máscaras
+
+
 
