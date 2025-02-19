@@ -12,14 +12,14 @@ Recuperado en [KAGGLE - ARCADE](https://www.kaggle.com/datasets/gongiahmed/arcad
   <tr>
     <td>
         <figure>
-            <img src="datasets/ARCADE/stenosis/1.png" alt="Imagen 1" width="250">
-            <figcaption align="center">Imagen 1. ARCADE-Stenosis</figcaption>
+            <img src="readme_resources/ARCADE_stenosis.png" alt="Imagen 1" width="250">
+            <figcaption align="center">Imagen 1. ARCADE-Estenosis</figcaption>
         </figure>
     </td>
     <td>
         <figure>
-            <img src="datasets/ARCADE/syntax/1.png" alt="Imagen 2" width="250">
-            <figcaption align="center">Imagen 2. ARCADE-Syntax</figcaption>
+            <img src="readme_resources/ARCADE_syntax.png" alt="Imagen 2" width="250">
+            <figcaption align="center">Imagen 2. ARCADE-Sintaxis</figcaption>
         </figure>
     </td>
   </tr>
@@ -73,22 +73,22 @@ Recuperado en [KAGGLE - DCA1](https://www.kaggle.com/datasets/bard2024/database-
   <tr>
     <td>
         <figure>
-            <img src="datasets/DCA1/" alt="Imagen 1" width="250">
-            <figcaption align="center">Imagen 1. ARCADE-Stenosis</figcaption>
+            <img src="readme_resources/DCA1_angiography.png" alt="Imagen 3" width="250">
+            <figcaption align="center">Imagen 3. DCA1-Angiografía</figcaption>
         </figure>
     </td>
     <td>
         <figure>
-            <img src="datasets/ARCADE/syntax/1.png" alt="Imagen 2" width="250">
-            <figcaption align="center">Imagen 2. ARCADE-Syntax</figcaption>
+            <img src="readme_resources/DCA1_mask.png" alt="Imagen 4" width="250">
+            <figcaption align="center">Imagen 4. DCA1-Máscara</figcaption>
         </figure>
     </td>
   </tr>
 </table>
 
-
-```plaintext
 ```plaintext
 📂 **DCA1**
 └── Archivos (268): _Ejemplos_: 1.pgm, 10.pgm, 100.pgm, 100_gt.pgm, 101.pgm
 ```
+
+##
