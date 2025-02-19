@@ -8,17 +8,14 @@ TFM VIU Catagua Cobos Josseph Yaakob
 
 Recuperado en [KAGGLE - ARCADE](https://www.kaggle.com/datasets/gongiahmed/arcade-x-ray-angiography-images) con imágenes de angiografía y sus respectivas anotaciones al estilo COCO para la segmentación vascular y detección de estenosis.
 
-<div align="center">
-  <figure>
-    <img src="readme_resources/ARCADE_stenosis.png" alt="Imagen 1" width="250">
-    <br>
-    <figcaption>Imagen 1. ARCADE-Estenosis</figcaption>
-  </figure>
-  <figure>
-    <img src="readme_resources/ARCADE_syntax.png" alt="Imagen 2" width="250">
-    <figcaption>Imagen 2. ARCADE-Sintaxis</figcaption>
-  </figure>
-</div>
+- ![Imagen 1](readme_resources/ARCADE_stenosis.png)
+  <br>
+  **Imagen 1. ARCADE-Estenosis**
+
+- ![Imagen 2](readme_resources/ARCADE_syntax.png)
+  <br>
+  **Imagen 2. ARCADE-Sintaxis**
+
 
 ```plaintext
 📂 **ARCADE**
