@@ -90,12 +90,39 @@ Recuperado en [KAGGLE - DCA1](https://www.kaggle.com/datasets/bard2024/database-
 
 Se usaron las anotaciones del dataset ARCADE para generar las máscaras de segmentación:
 
-<img src="readme_resources/ARCADE_stenosis_masks.png" alt="Imagen 5" width="250">
-<br>
-Imagen 5. ARCADE-Stenosis-Generación de máscaras
-<img src="readme_resources/ARCADE_syntax_masks.png" alt="Imagen 6" width="250">
-<br>
-Imagen 6. ARCADE-Syntax-Generación de máscaras
+<table>
+  <tr>
+    <td align="center">
+      <img src="readme_resources/ARCADE_stenosis_masks.png" alt="Imagen 5" width="250">
+      <br>
+      Imagen 5. ARCADE-Stenosis-Generación de máscaras
+    </td>
+    <td align="center">
+      <img src="readme_resources/ARCADE_syntax_masks.png" alt="Imagen 6" width="250">
+      <br>
+      Imagen 6. ARCADE-Syntax-Generación de máscaras
+    </td>
+  </tr>
+</table>
 
+## **ESTUDIO DE PREPROCESAMIENTO**
 
+Se aplicaron varios filtros de imagen, para observar cuál influye más en la segmentación vascular y la detección de estenosis:
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="readme_resources/ARCADE_segmentation_filters.png" alt="Imagen 7" height="75">
+      <br>
+      Imagen 7. ARCADE-Segmentación-Filtros aplicados
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="readme_resources/ARCADE_detection_filters.png" alt="Imagen 8" height="75">
+      <br>
+      Imagen 8. ARCADE-Detección-Filtros aplicados
+    </td>
+  </tr>
+</table>
 
