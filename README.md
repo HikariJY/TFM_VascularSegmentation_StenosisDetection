@@ -1,8 +1,8 @@
-# TFM_VascularSegmentation_StenosisDetection
-TFM VIU Catagua Cobos Josseph Yaakob
+# **TFM_VascularSegmentation_StenosisDetection**
+**TFM VIU Catagua Cobos Josseph Yaakob**
 
 
-## Datasets
+## **DATASETS**
 
 ### ARCADE
 
@@ -86,4 +86,5 @@ Recuperado en [KAGGLE - DCA1](https://www.kaggle.com/datasets/bard2024/database-
 └── Archivos (268): _Ejemplos_: 1.pgm, 10.pgm, 100.pgm, 100_gt.pgm, 101.pgm
 ```
 
-##
+## **Generacion de datos**
+
