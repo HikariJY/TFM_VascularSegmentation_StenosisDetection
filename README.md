@@ -12,7 +12,7 @@ Recuperado en [KAGGLE - ARCADE](https://www.kaggle.com/datasets/gongiahmed/arcad
   <tr>
     <td>
         <figure>
-            <img src="readme_resources/ARCADE_stenosis.png" alt="Imagen 1" width="250">
+            <img src="readme_resources/ARCADE_stenosis.png" alt="Imagen 1" width="250"><br>
             <figcaption align="center">Imagen 1. ARCADE-Estenosis</figcaption>
         </figure>
     </td>
