@@ -319,6 +319,64 @@ Por último se aplicó un estudio de caja y bigote por relación entre clase y f
   </tr>
 </table>
 
+### Impacto del Filtro de Entrada
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="checkpoints/segmentation/hp_p03_dropout00_loss02_norm.png" alt="Imagen 30" weight="250">
+      <br>
+      Imagen 30. Segmentación-Normalizado
+    </td>
+    <td align="center">
+      <img src="checkpoints/segmentation/hp_p03_dropout00_loss02_zscore.png" alt="Imagen 31" weight="250">
+      <br>
+      Imagen 31. Segmentación-Estandarización Zscore
+    </td>
+    <td align="center">
+      <img src="checkpoints/segmentation/hp_p03_dropout00_loss02_gaussian.png" alt="Imagen 32" weight="250">
+      <br>
+      Imagen 32. Segmentación-Desenfoque Gaussiano
+    </td>
+    <td align="center">
+      <img src="checkpoints/segmentation/hp_p03_dropout00_loss02_bilateral.png" alt="Imagen 33" weight="250">
+      <br>
+      Imagen 33. Segmentación-Filtro bilateral
+    </td>
+    <td align="center">
+      <img src="checkpoints/segmentation/hp_p03_dropout00_loss02_average.png" alt="Imagen 34" weight="250">
+      <br>
+      Imagen 34. Segmentación-Filtro promedio
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="checkpoints/segmentation/hp_p03_dropout00_loss02_norm.png" alt="Imagen 30" weight="250">
+      <br>
+      Imagen 30. Segmentación-Normalizado
+    </td>
+    <td align="center">
+      <img src="checkpoints/segmentation/hp_p03_dropout00_loss02_zscore.png" alt="Imagen 31" weight="250">
+      <br>
+      Imagen 31. Segmentación-Estandarización Zscore
+    </td>
+    <td align="center">
+      <img src="checkpoints/segmentation/hp_p03_dropout00_loss02_gaussian.png" alt="Imagen 32" weight="250">
+      <br>
+      Imagen 32. Segmentación-Desenfoque Gaussiano
+    </td>
+    <td align="center">
+      <img src="checkpoints/segmentation/hp_p03_dropout00_loss02_bilateral.png" alt="Imagen 33" weight="250">
+      <br>
+      Imagen 33. Segmentación-Filtro bilateral
+    </td>
+    <td align="center">
+      <img src="checkpoints/segmentation/hp_p03_dropout00_loss02_average.png" alt="Imagen 34" weight="250">
+      <br>
+      Imagen 34. Segmentación-Filtro promedio
+    </td>
+  </tr>
+</table>
 
 ## **DETECCIÓN DE ESTENOSIS**
 
