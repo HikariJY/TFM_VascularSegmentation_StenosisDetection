@@ -24,38 +24,38 @@ Recuperado en [KAGGLE - ARCADE](https://www.kaggle.com/datasets/gongiahmed/arcad
 </table>
 
 ```plaintext
-📂 **ARCADE**
-│── 📂 **stenosis**
+📂 ARCADE
+│── 📂 stenosis
 │   ├── 📄 data.yaml
-│   ├── 📂 **test**
+│   ├── 📂 test
 │   │   ├── 📄 labels.cache
 │   │   ├── 📂 annotations (1) → test.json
 │   │   ├── 📂 images (300) → _Ejemplos_: 1.png, 10.png, 100.png...
 │   │   └── 📂 labels (300) → _Ejemplos_: 1.txt, 10.txt, 100.txt...
-│   ├── 📂 **train**
+│   ├── 📂 train
 │   │   ├── 📄 labels.cache
 │   │   ├── 📂 annotations (1) → train.json
 │   │   ├── 📂 images (1000) → _Ejemplos_: 1.png, 10.png, 100.png...
 │   │   └── 📂 labels (997) → _Ejemplos_: 1.txt, 10.txt, 100.txt...
-│   └── 📂 **val**
+│   └── 📂 val
 │       ├── 📄 labels.cache
 │       ├── 📂 annotations (1) → val.json
 │       ├── 📂 images (200) → _Ejemplos_: 1.png, 10.png, 100.png...
 │       └── 📂 labels (200) → _Ejemplos_: 1.txt, 10.txt, 100.txt...
 │
-│── 📂 **syntax**
+│── 📂 syntax
     ├── 📄 data.yaml
-    ├── 📂 **test**
+    ├── 📂 test
     │   ├── 📄 labels.cache
     │   ├── 📂 annotations (1) → test.json
     │   ├── 📂 images (300) → _Ejemplos_: 1.png, 10.png, 100.png...
     │   └── 📂 labels (300) → _Ejemplos_: 1.txt, 10.txt, 100.txt...
-    ├── 📂 **train**
+    ├── 📂 train
     │   ├── 📄 labels.cache
     │   ├── 📂 annotations (1) → train.json
     │   ├── 📂 images (1000) → _Ejemplos_: 1.png, 10.png, 100.png...
     │   └── 📂 labels (1000) → _Ejemplos_: 1.txt, 10.txt, 100.txt...
-    └── 📂 **val**
+    └── 📂 val
         ├── 📄 labels.cache
         ├── 📂 annotations (1) → val.json
         ├── 📂 images (200) → _Ejemplos_: 1.png, 10.png, 100.png...
@@ -82,7 +82,7 @@ Recuperado en [KAGGLE - DCA1](https://www.kaggle.com/datasets/bard2024/database-
 </table>
 
 ```plaintext
-📂 **DCA1**
+📂 DCA1
 └── Archivos (268): _Ejemplos_: 1.pgm, 10.pgm, 100.pgm, 100_gt.pgm, 101.pgm
 ```
 
@@ -217,166 +217,9 @@ Por último se aplicó un estudio de caja y bigote por relación entre clase y f
   </tr>
 </table>
 
-### Impacto del Dropout
+### Resultados
 
-<table>
-  <tr>
-    <td align="center">
-      <img src="checkpoints/segmentation/hp_p01_dropout00_loss01_norm.png" alt="Imagen 14" weight="250">
-      <br>
-      Imagen 14. Segmentación-Sin dropout 
-    </td>
-    <td align="center">
-      <img src="checkpoints/segmentation/hp_p01_dropout03_loss01_norm.png" alt="Imagen 15" weight="250">
-      <br>
-      Imagen 15. Segmentación-Dropout 0.3
-    </td>
-    <td align="center">
-      <img src="checkpoints/segmentation/hp_p01_dropout05_loss01_norm.png" alt="Imagen 16" weight="250">
-      <br>
-      Imagen 16. Segmentación-Dropout 0.5
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="checkpoints/segmentation/tm_p01_loss.png" alt="Imagen 17" weight="250">
-      <br>
-      Imagen 17. Segmentación-Caja y bigotes-Pérdida
-    </td>
-    <td align="center">
-      <img src="checkpoints/segmentation/tm_p01_dice.png" alt="Imagen 18" weight="250">
-      <br>
-      Imagen 18. Segmentación-Caja y bigotes-Coeficiente Dice
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="checkpoints/segmentation/exm_p01_dropout00_loss01_norm.png" alt="Imagen 19" weight="250">
-      <br>
-      Imagen 19. Segmentación-Resultados del modelo-Sin dropout
-    </td>
-    <td align="center">
-      <img src="checkpoints/segmentation/exm_p01_dropout03_loss01_norm.png" alt="Imagen 20" weight="250">
-      <br>
-      Imagen 20. Segmentación-Resultados del modelo-Dropout 0.3
-    </td>
-    <td align="center">
-      <img src="checkpoints/segmentation/exm_p01_dropout05_loss01_norm.png" alt="Imagen 21" weight="250">
-      <br>
-      Imagen 21. Segmentación-Resultados del modelo-Dropout 0.5
-    </td>
-  </tr>
-</table>
 
-### Comparación de Funciones de Pérdida
-
-<table>
-  <tr>
-    <td align="center">
-      <img src="checkpoints/segmentation/hp_p02_dropout00_loss01_norm.png" alt="Imagen 22" weight="250">
-      <br>
-      Imagen 22. Segmentación-<code>0.4*dice+0.6*focal_bce</code>
-    </td>
-    <td align="center">
-      <img src="checkpoints/segmentation/hp_p02_dropout00_loss02_norm.png" alt="Imagen 23" weight="250">
-      <br>
-      Imagen 23. Segmentación-<code>0.6*dice+0.4*focal_bce</code>
-    </td>
-    <td align="center">
-      <img src="checkpoints/segmentation/hp_p02_dropout00_loss03_norm.png" alt="Imagen 24" weight="250">
-      <br>
-      Imagen 24. Segmentación-<code>0.75*dice+0.25*focal_bce</code>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="checkpoints/segmentation/tm_p02_loss.png" alt="Imagen 25" weight="250">
-      <br>
-      Imagen 25. Segmentación-Caja y bigotes-Pérdida
-    </td>
-    <td align="center">
-      <img src="checkpoints/segmentation/tm_p02_dice.png" alt="Imagen 26" weight="250">
-      <br>
-      Imagen 26. Segmentación-Caja y bigotes-Coeficiente Dice
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="checkpoints/segmentation/exm_p02_dropout00_loss01_norm.png" alt="Imagen 27" weight="250">
-      <br>
-      Imagen 27. Segmentación-Resultados del modelo-<code>0.4*dice+0.6*focal_bce</code>
-    </td>
-    <td align="center">
-      <img src="checkpoints/segmentation/exm_p02_dropout00_loss02_norm.png" alt="Imagen 28" weight="250">
-      <br>
-      Imagen 28. Segmentación-Resultados del modelo-<code>0.6*dice+0.4*focal_bce</code>
-    </td>
-    <td align="center">
-      <img src="checkpoints/segmentation/exm_p02_dropout00_loss03_norm.png" alt="Imagen 29" weight="250">
-      <br>
-      Imagen 29. Segmentación-Resultados del modelo-<code>0.75*dice+0.25*focal_bce</code>
-    </td>
-  </tr>
-</table>
-
-### Impacto del Filtro de Entrada
-
-<table>
-  <tr>
-    <td align="center">
-      <img src="checkpoints/segmentation/hp_p03_dropout00_loss02_norm.png" alt="Imagen 30" weight="100">
-      <br>
-      Imagen 30. Segmentación-Normalizado
-    </td>
-    <td align="center">
-      <img src="checkpoints/segmentation/hp_p03_dropout00_loss02_zscore.png" alt="Imagen 31" weight="100">
-      <br>
-      Imagen 31. Segmentación-Estandarización Zscore
-    </td>
-    <td align="center">
-      <img src="checkpoints/segmentation/hp_p03_dropout00_loss02_gaussian.png" alt="Imagen 32" weight="100">
-      <br>
-      Imagen 32. Segmentación-Desenfoque Gaussiano
-    </td>
-    <td align="center">
-      <img src="checkpoints/segmentation/hp_p03_dropout00_loss02_bilateral.png" alt="Imagen 33" weight="100">
-      <br>
-      Imagen 33. Segmentación-Filtro bilateral
-    </td>
-    <td align="center">
-      <img src="checkpoints/segmentation/hp_p03_dropout00_loss02_average.png" alt="Imagen 34" weight="100">
-      <br>
-      Imagen 34. Segmentación-Filtro promedio
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="checkpoints/segmentation/hp_p03_dropout00_loss02_norm-zscore.png" alt="Imagen 35" weight="100">
-      <br>
-      Imagen 35. Segmentación-Normalizado+Estandarización Zscore
-    </td>
-    <td align="center">
-      <img src="checkpoints/segmentation/hp_p03_dropout00_loss02_norm-gaussian.png" alt="Imagen 36" weight="100">
-      <br>
-      Imagen 36. Segmentación-Normalizado+Desenfoque Gaussiano
-    </td>
-    <td align="center">
-      <img src="checkpoints/segmentation/hp_p03_dropout00_loss02_norm-bilateral.png" alt="Imagen 37" weight="100">
-      <br>
-      Imagen 37. Segmentación-Normalizado+Filtro bilateral
-    </td>
-    <td align="center">
-      <img src="checkpoints/segmentation/hp_p03_dropout00_loss02_norm-average.png" alt="Imagen 38" weight="100">
-      <br>
-      Imagen 38. Segmentación-Normalizado+Filtro promedio
-    </td>
-    <td align="center">
-      <img src="checkpoints/segmentation/hp_p03_dropout00_loss02_zscore-gaussian.png" alt="Imagen 39" weight="100">
-      <br>
-      Imagen 39. Segmentación-Estandarización Zscore+Desenfoque Gaussiano
-    </td>
-  </tr>
-</table>
 
 ## **DETECCIÓN DE ESTENOSIS**
 
