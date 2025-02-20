@@ -267,25 +267,25 @@ Modelo Res U-Net sin Dropout y filtros $[32, 64, 128, 256]$, con un batch size d
 
 <table>
   <tr>
-    <img src="checkpoints/detection/hp_p_dropout00_loss02_norm-bilateral.png" alt="Imagen 14" width="400">
+    <img src="checkpoints/detection/hp_p_dropout00_loss02_norm-gaussian.png" alt="Imagen 19" width="400">
     <br>
-    Imagen 14. Segmentación-UNet-Curvas de aprendizaje
+    Imagen 19. Detección-Res UNet-Curvas de aprendizaje
   </tr>
   <tr>
-    <img src="checkpoints/detection/tm_p.png" alt="Imagen 15" width="1000">
+    <img src="checkpoints/detection/tm_p.png" alt="Imagen 20" width="1000">
     <br>
-    Imagen 15. Segmentación-UNet-Diagrama de caja y bigotes
+    Imagen 20. Detección-Res UNet-Diagrama de caja y bigotes
   </tr>
   <tr>
     <td align="center">
-      <img src="checkpoints/detection/exm_p_1_dropout00_loss02_norm-bilateral.png" alt="Imagen 16" width="500">
+      <img src="checkpoints/detection/exm_p_1_dropout00_loss02_norm-gaussian.png" alt="Imagen 21" width="500">
       <br>
-      Imagen 16. Segmentación-UNet-Resultados 1
+      Imagen 21. Detección-Res UNet-Resultados 1
     </td>
     <td align="center">
-      <img src="checkpoints/detection/exm_p_2_dropout00_loss02_norm-bilateral.png" alt="Imagen 17" width="500">
+      <img src="checkpoints/detection/exm_p_2_dropout00_loss02_norm-gaussian.png" alt="Imagen 22" width="500">
       <br>
-      Imagen 17. Segmentación-UNet-Resultados 2
+      Imagen 22. Detección-Res UNet-Resultados 2
     </td>
   </tr>
 </table>
