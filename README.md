@@ -290,14 +290,14 @@ Por último se aplicó un estudio de caja y bigote por relación entre clase y f
   </tr>
   <tr>
     <td align="center">
-      <img src="checkpoints/segmentation/tm_p01_loss.png" alt="Imagen 17" weight="250">
+      <img src="checkpoints/segmentation/tm_p02_loss.png" alt="Imagen 25" weight="250">
       <br>
-      Imagen 17. Segmentación-Caja y bigotes-Pérdida
+      Imagen 25. Segmentación-Caja y bigotes-Pérdida
     </td>
     <td align="center">
-      <img src="checkpoints/segmentation/tm_p01_dice.png" alt="Imagen 18" weight="250">
+      <img src="checkpoints/segmentation/tm_p02_dice.png" alt="Imagen 26" weight="250">
       <br>
-      Imagen 18. Segmentación-Caja y bigotes-Coeficiente Dice
+      Imagen 26. Segmentación-Caja y bigotes-Coeficiente Dice
     </td>
   </tr>
   <tr>
