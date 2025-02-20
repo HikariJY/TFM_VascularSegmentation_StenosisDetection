@@ -273,19 +273,19 @@ Por último se aplicó un estudio de caja y bigote por relación entre clase y f
 <table>
   <tr>
     <td align="center">
-      <img src="checkpoints/segmentation/hp_p01_dropout00_loss01_norm.png" alt="Imagen 14" weight="250">
+      <img src="checkpoints/segmentation/hp_p02_dropout00_loss01_norm.png" alt="Imagen 22" weight="250">
       <br>
-      Imagen 14. Segmentación-Sin dropout 
+      Imagen 22. Segmentación-<code>0.4*dice+0.6*focal_bce</code>
     </td>
     <td align="center">
-      <img src="checkpoints/segmentation/hp_p01_dropout03_loss01_norm.png" alt="Imagen 15" weight="250">
+      <img src="checkpoints/segmentation/hp_p02_dropout00_loss02_norm.png" alt="Imagen 23" weight="250">
       <br>
-      Imagen 15. Segmentación-Dropout 0.3
+      Imagen 23. Segmentación-<code>0.6*dice+0.4*focal_bce</code>
     </td>
     <td align="center">
-      <img src="checkpoints/segmentation/hp_p01_dropout05_loss01_norm.png" alt="Imagen 16" weight="250">
+      <img src="checkpoints/segmentation/hp_p02_dropout00_loss03_norm.png" alt="Imagen 24" weight="250">
       <br>
-      Imagen 16. Segmentación-Dropout 0.5
+      Imagen 24. Segmentación-<code>0.75*dice+0.25*focal_bce</code>
     </td>
   </tr>
   <tr>
