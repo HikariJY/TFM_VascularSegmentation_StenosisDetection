@@ -93,12 +93,12 @@ Se usaron las anotaciones del dataset ARCADE para generar las máscaras de segme
 <table>
   <tr>
     <td align="center">
-      <img src="readme_resources/ARCADE_stenosis_masks.png" alt="Imagen 5" width="250">
+      <img src="readme_resources/ARCADE_stenosis_masks.png" alt="Imagen 5" width="500">
       <br>
       Imagen 5. ARCADE-Stenosis-Generación de máscaras
     </td>
     <td align="center">
-      <img src="readme_resources/ARCADE_syntax_masks.png" alt="Imagen 6" width="250">
+      <img src="readme_resources/ARCADE_syntax_masks.png" alt="Imagen 6" width="500">
       <br>
       Imagen 6. ARCADE-Syntax-Generación de máscaras
     </td>
@@ -112,14 +112,14 @@ Se aplicaron varios filtros de imagen, para observar cuál influye más en la se
 <table>
   <tr>
     <td align="center">
-      <img src="readme_resources/ARCADE_segmentation_filters.png" alt="Imagen 7" height="75">
+      <img src="readme_resources/ARCADE_segmentation_filters.png" alt="Imagen 7" width="1000">
       <br>
       Imagen 7. ARCADE-Segmentación-Filtros aplicados
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="readme_resources/ARCADE_detection_filters.png" alt="Imagen 8" height="75">
+      <img src="readme_resources/ARCADE_detection_filters.png" alt="Imagen 8" width="1000">
       <br>
       Imagen 8. ARCADE-Detección-Filtros aplicados
     </td>
@@ -142,7 +142,7 @@ Luego se aplicó un estudio por matriz de correlación con un umbral de 0.9 o 90
   </tr>
   <tr>
     <td align="center">
-      <img src="readme_resources/ARCADE_segmentation_matrix.png" alt="Imagen 9" weight="250">
+      <img src="readme_resources/ARCADE_segmentation_matrix.png" alt="Imagen 9" width="400">
       <br>
       Imagen 9. ARCADE-Segmentación-Matriz de correlación entre filtros
     </td>
@@ -164,7 +164,7 @@ Luego se aplicó un estudio por matriz de correlación con un umbral de 0.9 o 90
   </tr>
   <tr>
     <td align="center">
-      <img src="readme_resources/ARCADE_detection_matrix.png" alt="Imagen 10" weight="250">
+      <img src="readme_resources/ARCADE_detection_matrix.png" alt="Imagen 10" width="400">
       <br>
       Imagen 10. ARCADE-Detección-Matriz de correlación entre filtros
     </td>
@@ -191,12 +191,12 @@ Por último se aplicó un estudio de caja y bigote por relación entre clase y f
 <table>
   <tr>
     <td align="center">
-      <img src="readme_resources/ARCADE_segmentation_boxplot.png" alt="Imagen 11" weight="250">
+      <img src="readme_resources/ARCADE_segmentation_boxplot.png" alt="Imagen 11" width="500">
       <br>
       Imagen 11. ARCADE-Segmentación-Caja y bigotes
     </td>
     <td align="center">
-      <img src="readme_resources/ARCADE_detection_boxplot.png" alt="Imagen 12" weight="250">
+      <img src="readme_resources/ARCADE_detection_boxplot.png" alt="Imagen 12" width="500">
       <br>
       Imagen 12. ARCADE-Detección-Caja y bigotes
     </td>
@@ -217,9 +217,34 @@ Por último se aplicó un estudio de caja y bigote por relación entre clase y f
   </tr>
 </table>
 
-### Resultados
+### Resultados: [Mejores pesos](checkpoints/segmentation/bw_p##_dropout00_loss02_norm-bilateral.weights.h5)
 
+Modelo U-Net sin Dropout y filtros $[32, 64, 128, 256]$, con un batch size de $8$, un learning rate de $1 \times 10^{-5}$, un número de épocas máximas de $100$, una función de pérdida igual a $0.6 \times Dice_{loss} + 0.4 \times FocalBCE_{loss}$, y como entrada la normalización de la imágen original en el primer canal con la aplicación del filtro bilateral en el segundo canal de imagen teniendo un tamaño de $(512, 512, 2)$.
 
+<table>
+  <tr>
+    <img src="checkpoints/segmentation/hp_p_dropout00_loss02_norm-bilateral.png" alt="Imagen 14" width="400">
+    <br>
+    Imagen 14. Segmentación-UNet-Curvas de aprendizaje
+  </tr>
+  <tr>
+    <img src="checkpoints/segmentation/tm_p.png" alt="Imagen 15" width="1000">
+    <br>
+    Imagen 15. Segmentación-UNet-Diagrama de caja y bigotes
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="checkpoints/segmentation/exm_p_1_dropout00_loss02_norm-bilateral.png" alt="Imagen 16" width="500">
+      <br>
+      Imagen 16. Segmentación-UNet-Resultados 1
+    </td>
+    <td align="center">
+      <img src="checkpoints/segmentation/exm_p_2_dropout00_loss02_norm-bilateral.png" alt="Imagen 17" width="500">
+      <br>
+      Imagen 17. Segmentación-UNet-Resultados 2
+    </td>
+  </tr>
+</table>
 
 ## **DETECCIÓN DE ESTENOSIS**
 
@@ -228,11 +253,40 @@ Por último se aplicó un estudio de caja y bigote por relación entre clase y f
 <table>
   <tr>
     <td align="center">
-      <img src="readme_resources/ResUNet.png" alt="Imagen 14" height="300">
+      <img src="readme_resources/ResUNet.png" alt="Imagen 18" height="300">
       <br>
-      Imagen 14. Segmentación-UNet
+      Imagen 18. Deteccion-Res UNet
     </td>
   </tr>
 </table>
 
-###
+
+### Resultados: [Mejores pesos](checkpoints/segmentation/bw_p##_dropout00_loss02_norm-bilateral.weights.h5)
+
+Modelo U-Net sin Dropout y filtros $[32, 64, 128, 256]$, con un batch size de $8$, un learning rate de $1 \times 10^{-5}$, un número de épocas máximas de $100$, una función de pérdida igual a $0.6 \times Dice_{loss} + 0.4 \times FocalBCE_{loss}$, y como entrada la normalización de la imágen original en el primer canal con la aplicación del filtro bilateral en el segundo canal de imagen teniendo un tamaño de $(512, 512, 2)$.
+
+<table>
+  <tr>
+    <img src="checkpoints/segmentation/hp_p_dropout00_loss02_norm-bilateral.png" alt="Imagen 14" width="400">
+    <br>
+    Imagen 14. Segmentación-UNet-Curvas de aprendizaje
+  </tr>
+  <tr>
+    <img src="checkpoints/segmentation/tm_p.png" alt="Imagen 15" width="1000">
+    <br>
+    Imagen 15. Segmentación-UNet-Diagrama de caja y bigotes
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="checkpoints/segmentation/exm_p_1_dropout00_loss02_norm-bilateral.png" alt="Imagen 16" width="500">
+      <br>
+      Imagen 16. Segmentación-UNet-Resultados 1
+    </td>
+    <td align="center">
+      <img src="checkpoints/segmentation/exm_p_2_dropout00_loss02_norm-bilateral.png" alt="Imagen 17" width="500">
+      <br>
+      Imagen 17. Segmentación-UNet-Resultados 2
+    </td>
+  </tr>
+</table>
+
