@@ -217,7 +217,7 @@ Por último se aplicó un estudio de caja y bigote por relación entre clase y f
   </tr>
 </table>
 
-### Resultados: [Mejores pesos](checkpoints/segmentation/bw_p##_dropout00_loss02_norm-bilateral.weights.h5)
+### Resultados: [Mejores pesos](checkpoints/segmentation/bw_p_dropout00_loss02_norm-bilateral.weights.h5)
 
 Modelo U-Net sin Dropout y filtros $[32, 64, 128, 256]$, con un batch size de $8$, un learning rate de $1 \times 10^{-5}$, un número de épocas máximas de $100$, una función de pérdida igual a $0.6 \times Dice_{loss} + 0.4 \times FocalBCE_{loss}$, y como entrada la normalización de la imágen original en el primer canal con la aplicación del filtro bilateral en el segundo canal de imagen teniendo un tamaño de $(512, 512, 2)$.
 
@@ -261,29 +261,29 @@ Modelo U-Net sin Dropout y filtros $[32, 64, 128, 256]$, con un batch size de $8
 </table>
 
 
-### Resultados: [Mejores pesos](checkpoints/segmentation/bw_p##_dropout00_loss02_norm-bilateral.weights.h5)
+### Resultados: [Mejores pesos](checkpoints/detection/bw_p_dropout00_loss02_norm-gaussian.weights)
 
-Modelo U-Net sin Dropout y filtros $[32, 64, 128, 256]$, con un batch size de $8$, un learning rate de $1 \times 10^{-5}$, un número de épocas máximas de $100$, una función de pérdida igual a $0.6 \times Dice_{loss} + 0.4 \times FocalBCE_{loss}$, y como entrada la normalización de la imágen original en el primer canal con la aplicación del filtro bilateral en el segundo canal de imagen teniendo un tamaño de $(512, 512, 2)$.
+Modelo Res U-Net sin Dropout y filtros $[32, 64, 128, 256]$, con un batch size de $8$, un learning rate de $1 \times 10^{-5}$, un número de épocas máximas de $100$, una función de pérdida igual a $0.6 \times Dice_{loss} + 0.4 \times FocalBCE_{loss}$, y como entrada la normalización de la imágen original en el primer canal con la aplicación del desenfoque Gaussiano en el segundo canal de imagen teniendo un tamaño de $(512, 512, 2)$.
 
 <table>
   <tr>
-    <img src="checkpoints/segmentation/hp_p_dropout00_loss02_norm-bilateral.png" alt="Imagen 14" width="400">
+    <img src="checkpoints/detection/hp_p_dropout00_loss02_norm-bilateral.png" alt="Imagen 14" width="400">
     <br>
     Imagen 14. Segmentación-UNet-Curvas de aprendizaje
   </tr>
   <tr>
-    <img src="checkpoints/segmentation/tm_p.png" alt="Imagen 15" width="1000">
+    <img src="checkpoints/detection/tm_p.png" alt="Imagen 15" width="1000">
     <br>
     Imagen 15. Segmentación-UNet-Diagrama de caja y bigotes
   </tr>
   <tr>
     <td align="center">
-      <img src="checkpoints/segmentation/exm_p_1_dropout00_loss02_norm-bilateral.png" alt="Imagen 16" width="500">
+      <img src="checkpoints/detection/exm_p_1_dropout00_loss02_norm-bilateral.png" alt="Imagen 16" width="500">
       <br>
       Imagen 16. Segmentación-UNet-Resultados 1
     </td>
     <td align="center">
-      <img src="checkpoints/segmentation/exm_p_2_dropout00_loss02_norm-bilateral.png" alt="Imagen 17" width="500">
+      <img src="checkpoints/detection/exm_p_2_dropout00_loss02_norm-bilateral.png" alt="Imagen 17" width="500">
       <br>
       Imagen 17. Segmentación-UNet-Resultados 2
     </td>
