@@ -302,19 +302,19 @@ Por último se aplicó un estudio de caja y bigote por relación entre clase y f
   </tr>
   <tr>
     <td align="center">
-      <img src="checkpoints/segmentation/exm_p01_dropout00_loss01_norm.png" alt="Imagen 19" weight="250">
+      <img src="checkpoints/segmentation/exm_p02_dropout00_loss01_norm.png" alt="Imagen 27" weight="250">
       <br>
-      Imagen 19. Segmentación-Resultados del modelo-Sin dropout
+      Imagen 27. Segmentación-Resultados del modelo-<code>0.4*dice+0.6*focal_bce</code>
     </td>
     <td align="center">
-      <img src="checkpoints/segmentation/exm_p01_dropout03_loss01_norm.png" alt="Imagen 20" weight="250">
+      <img src="checkpoints/segmentation/exm_p02_dropout00_loss02_norm.png" alt="Imagen 28" weight="250">
       <br>
-      Imagen 20. Segmentación-Resultados del modelo-Dropout 0.3
+      Imagen 28. Segmentación-Resultados del modelo-<code>0.6*dice+0.4*focal_bce</code>
     </td>
     <td align="center">
-      <img src="checkpoints/segmentation/exm_p01_dropout05_loss01_norm.png" alt="Imagen 21" weight="250">
+      <img src="checkpoints/segmentation/exm_p02_dropout00_loss03_norm.png" alt="Imagen 29" weight="250">
       <br>
-      Imagen 21. Segmentación-Resultados del modelo-Dropout 0.5
+      Imagen 29. Segmentación-Resultados del modelo-<code>0.75*dice+0.25*focal_bce</code>
     </td>
   </tr>
 </table>
