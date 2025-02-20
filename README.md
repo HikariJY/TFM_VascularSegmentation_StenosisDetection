@@ -210,7 +210,7 @@ Por último se aplicó un estudio de caja y bigote por relación entre clase y f
 <table>
   <tr>
     <td align="center">
-      <img src="readme_resources/UNet.png" alt="Imagen 13" weight="250">
+      <img src="readme_resources/UNet.png" alt="Imagen 13" height="250">
       <br>
       Imagen 13. Segmentación-UNet
     </td>
@@ -219,6 +219,105 @@ Por último se aplicó un estudio de caja y bigote por relación entre clase y f
 
 ### Impacto del Dropout
 
+<table>
+  <tr>
+    <td align="center">
+      <img src="checkpoints/segmentation/hp_p01_dropout00_loss01_norm.png" alt="Imagen 14" weight="250">
+      <br>
+      Imagen 14. Segmentación-Sin dropout 
+    </td>
+    <td align="center">
+      <img src="checkpoints/segmentation/hp_p01_dropout03_loss01_norm.png" alt="Imagen 15" weight="250">
+      <br>
+      Imagen 15. Segmentación-Dropout 0.3
+    </td>
+    <td align="center">
+      <img src="checkpoints/segmentation/hp_p01_dropout05_loss01_norm.png" alt="Imagen 16" weight="250">
+      <br>
+      Imagen 16. Segmentación-Dropout 0.5
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="checkpoints/segmentation/tm_p01_loss.png" alt="Imagen 17" weight="250">
+      <br>
+      Imagen 17. Segmentación-Caja y bigotes-Pérdida
+    </td>
+    <td align="center">
+      <img src="checkpoints/segmentation/tm_p01_dice.png" alt="Imagen 18" weight="250">
+      <br>
+      Imagen 18. Segmentación-Caja y bigotes-Coeficiente Dice
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="checkpoints/segmentation/exm_p01_dropout00_loss01_norm.png" alt="Imagen 19" weight="250">
+      <br>
+      Imagen 19. Segmentación-Resultados del modelo-Sin dropout
+    </td>
+    <td align="center">
+      <img src="checkpoints/segmentation/exm_p01_dropout03_loss01_norm.png" alt="Imagen 20" weight="250">
+      <br>
+      Imagen 20. Segmentación-Resultados del modelo-Dropout 0.3
+    </td>
+    <td align="center">
+      <img src="checkpoints/segmentation/exm_p01_dropout05_loss01_norm.png" alt="Imagen 21" weight="250">
+      <br>
+      Imagen 21. Segmentación-Resultados del modelo-Dropout 0.5
+    </td>
+  </tr>
+</table>
+
+### Comparación de Funciones de Pérdida
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="checkpoints/segmentation/hp_p01_dropout00_loss01_norm.png" alt="Imagen 14" weight="250">
+      <br>
+      Imagen 14. Segmentación-Sin dropout 
+    </td>
+    <td align="center">
+      <img src="checkpoints/segmentation/hp_p01_dropout03_loss01_norm.png" alt="Imagen 15" weight="250">
+      <br>
+      Imagen 15. Segmentación-Dropout 0.3
+    </td>
+    <td align="center">
+      <img src="checkpoints/segmentation/hp_p01_dropout05_loss01_norm.png" alt="Imagen 16" weight="250">
+      <br>
+      Imagen 16. Segmentación-Dropout 0.5
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="checkpoints/segmentation/tm_p01_loss.png" alt="Imagen 17" weight="250">
+      <br>
+      Imagen 17. Segmentación-Caja y bigotes-Pérdida
+    </td>
+    <td align="center">
+      <img src="checkpoints/segmentation/tm_p01_dice.png" alt="Imagen 18" weight="250">
+      <br>
+      Imagen 18. Segmentación-Caja y bigotes-Coeficiente Dice
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="checkpoints/segmentation/exm_p01_dropout00_loss01_norm.png" alt="Imagen 19" weight="250">
+      <br>
+      Imagen 19. Segmentación-Resultados del modelo-Sin dropout
+    </td>
+    <td align="center">
+      <img src="checkpoints/segmentation/exm_p01_dropout03_loss01_norm.png" alt="Imagen 20" weight="250">
+      <br>
+      Imagen 20. Segmentación-Resultados del modelo-Dropout 0.3
+    </td>
+    <td align="center">
+      <img src="checkpoints/segmentation/exm_p01_dropout05_loss01_norm.png" alt="Imagen 21" weight="250">
+      <br>
+      Imagen 21. Segmentación-Resultados del modelo-Dropout 0.5
+    </td>
+  </tr>
+</table>
 
 
 ## **DETECCIÓN DE ESTENOSIS**
@@ -228,7 +327,7 @@ Por último se aplicó un estudio de caja y bigote por relación entre clase y f
 <table>
   <tr>
     <td align="center">
-      <img src="readme_resources/ResUNet.png" alt="Imagen 14" weight="250">
+      <img src="readme_resources/ResUNet.png" alt="Imagen 14" height="300">
       <br>
       Imagen 14. Segmentación-UNet
     </td>
