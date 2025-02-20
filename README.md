@@ -205,3 +205,34 @@ Por último se aplicó un estudio de caja y bigote por relación entre clase y f
 
 ## **SEGMENTACIÓN VASCULAR**
 
+### Modelo U-Net
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="readme_resources/UNet.png" alt="Imagen 13" weight="250">
+      <br>
+      Imagen 13. Segmentación-UNet
+    </td>
+  </tr>
+</table>
+
+### Impacto del Dropout
+
+
+
+## **DETECCIÓN DE ESTENOSIS**
+
+### Modelo Res U-Net
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="readme_resources/ResUNet.png" alt="Imagen 14" weight="250">
+      <br>
+      Imagen 14. Segmentación-UNet
+    </td>
+  </tr>
+</table>
+
+###
