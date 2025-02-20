@@ -126,3 +126,82 @@ Se aplicaron varios filtros de imagen, para observar cuál influye más en la se
   </tr>
 </table>
 
+Luego se aplicó un estudio por matriz de correlación con un umbral de 0.9 o 90% máximo de correlación entre filtros:
+
+<table>
+  <tr>
+    <td align="center">
+        Matriz de correlación
+    </td>
+    <td align="center">
+        Filtros descartados
+    </td>
+    <td align="center">
+        Filtros no descartados
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="readme_resources/ARCADE_segmentation_matrix.png" alt="Imagen 9" weight="250">
+      <br>
+      Imagen 9. ARCADE-Segmentación-Matriz de correlación entre filtros
+    </td>
+    <td align="left">
+        - CLAHE <br>
+        - Desenfoque de mediana <br>
+        - Ecualización por histograma <br>
+        - Realce de bordes <br>
+        - Sobel <br>
+        - Unsharp Masking <br>
+    </td>
+    <td align="left">
+        - Bilateral <br>
+        - Desenfoque Gaussiano <br>
+        - Estandarización Z-Score <br>
+        - Normalización <br>
+        - Promedio <br>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="readme_resources/ARCADE_detection_matrix.png" alt="Imagen 10" weight="250">
+      <br>
+      Imagen 10. ARCADE-Detección-Matriz de correlación entre filtros
+    </td>
+    <td align="left">
+        - CLAHE <br>
+        - Desenfoque de mediana <br>
+        - Ecualización por histograma <br>
+        - Realce de bordes <br>
+        - Sobel <br>
+        - Unsharp Masking <br>
+    </td>
+    <td align="left">
+        - Bilateral <br>
+        - Desenfoque Gaussiano <br>
+        - Estandarización Z-Score <br>
+        - Normalización <br>
+        - Promedio <br>
+    </td>
+  </tr>
+</table>
+
+Por último se aplicó un estudio de caja y bigote por relación entre clase y filtro con un umbral de 0.05, aunque ninguno fue descartado, ayudó a verificar que pueden dar información suficiente para clasificarlo entre región con interés y fondo.
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="readme_resources/ARCADE_segmentation_boxplot.png" alt="Imagen 11" weight="250">
+      <br>
+      Imagen 11. ARCADE-Segmentación-Caja y bigotes
+    </td>
+    <td align="center">
+      <img src="readme_resources/ARCADE_detection_boxplot.png" alt="Imagen 12" weight="250">
+      <br>
+      Imagen 12. ARCADE-Detección-Caja y bigotes
+    </td>
+  </tr>
+</table>
+
+## **SEGMENTACIÓN VASCULAR**
+
